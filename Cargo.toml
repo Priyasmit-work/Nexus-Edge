@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/nexusedge-core",
+    "crates/nexusedge-crdt",
+    "crates/nexusedge-cas",
+    "crates/nexusedge-execution",
+    "crates/nexusedge-telemetry",
+    "crates/nexusedge-transport",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["NexusEdge Contributors"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Priyasmit-work/Nexus-Edge"
