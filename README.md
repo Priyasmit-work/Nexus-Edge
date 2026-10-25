@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Executive Overview & Problem Statement
+ Executive Overview & Problem Statement
 
 Modern edge computing environments—such as remote research facilities, autonomous fleets, retail edge servers, and field operations—face two severe infrastructure bottlenecks:
 
@@ -29,7 +29,7 @@ Modern edge computing environments—such as remote research facilities, autonom
 
 ---
 
-## 🏗 System Architecture & Workflow
+System Architecture & Workflow
 
 NexusEdge operates as an autonomous mesh node containing five core subsystems:
 
@@ -55,7 +55,7 @@ NexusEdge operates as an autonomous mesh node containing five core subsystems:
 └───────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-## 💻 Command-Line Interface & Download Flow
+## Command-Line Interface & Download Flow
 
 NexusEdge is driven through a simple CLI — the user doesn't need to know which peer ends up serving the file:
 
@@ -85,7 +85,7 @@ This is the core reliability guarantee: **a network interruption never kills the
 
 ---
 
-## 🔒 Security
+##  Security
 
 Because NexusEdge has no central authority validating peers or data, security has to be enforced at every hop rather than assumed from a trusted server:
 
@@ -99,7 +99,7 @@ Because NexusEdge has no central authority validating peers or data, security ha
 
 ---
 
-## 🛠 Repository Directory Structure
+ Repository Directory Structure
 
 Beyond distributing data, NexusEdge treats **spare CPU and GPU capacity on connected machines as a shared, discoverable resource pool**, so tasks can run on whichever nearby node is actually free — not just the one that submitted the job.
 
@@ -115,7 +115,7 @@ This is what lets a phone, a desktop, and a field server on the same NexusEdge m
 
 ---
 
-## 🛠 Repository Directory Structure
+##  Repository Directory Structure
 
 ```text
 nexus-edge/
@@ -139,7 +139,7 @@ nexus-edge/
 
 ---
 
-## 🚀 Key Technologies & Stack
+##  Key Technologies & Stack
 
 * **Core Daemon (Rust 1.75+):** `tokio` for async scheduling, `wasmtime` for WASM execution, `aya-rs` for eBPF kernel integration, `quinn` for QUIC transport.
 * **Network & P2P Protocols (Go 1.22+ & C):** `libp2p` (Kademlia DHT, Gossipsub), `pion/webrtc` (STUN/ICE NAT traversal), SIMD-accelerated C bindings for Reed-Solomon Erasure Coding (FEC).
@@ -150,7 +150,7 @@ nexus-edge/
 
 ---
 
-## 📊 Target Performance Benchmarks & KPIs
+##  Target Performance Benchmarks & KPIs
 
 Contributors working on performance-critical paths should benchmark against these metrics:
 
@@ -162,7 +162,7 @@ Contributors working on performance-critical paths should benchmark against thes
 
 ---
 
-## 💻 Developer Onboarding & Build Setup
+ Developer Onboarding & Build Setup
 
 ### Prerequisites
 
@@ -201,7 +201,7 @@ Contributors working on performance-critical paths should benchmark against thes
 
 ---
 
-## 🤝 Contributing Guidelines & Subsystem Ownership
+##  Contributing Guidelines & Subsystem Ownership
 
 We welcome contributions across all subsystems! Here is how to get started based on your background:
 
